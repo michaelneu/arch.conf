@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo '{ "version": 1, "click_events": true }'
+echo '['
+echo '[],'
+
+exec conky -c ~/.config/i3/.conkyrc &
+
+while read -r line
+do
+	if [ "$line" = "[" ]
+	then
+		continue
+	fi
+
+    ~/.config/i3/scripts/click-handler.py $line
+done

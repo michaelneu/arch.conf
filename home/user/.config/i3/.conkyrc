@@ -1,0 +1,73 @@
+out_to_x no
+own_window no
+out_to_console yes
+background no
+max_text_width 0
+
+update_interval 5
+total_run_times 0
+if_up_strictness address
+
+use_spacer none
+
+use_xft yes
+xftfont Droid Sans:style=bold:size=8
+override_utf8_locale yes
+
+TEXT
+[
+	{
+		"name": "wallpaper",
+		"full_text": "       WALLPAPER  ",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{ 
+		"full_text": "       ${totalup}      ${totaldown}       ${addr eth0}  ",
+		"color": "\#c0c0c0", 
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{
+		"name": "system",
+		"full_text": "       ${memperc}%     ${loadavg 1} (${cpu}%)     ${acpitemp}°C  ",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{
+		"full_text": "    ${exec $HOME/.config/i3/scripts/color-volume.py}",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{
+		"name": "calendar",
+		"full_text": "      ${time %Y-%m-%d %H:%M:%S}  ",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{
+		"name": "suspend",
+		"full_text": "   sleep   ",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	},
+	{
+		"name": "shutdown",
+		"full_text": "     poweroff  ",
+		"color": "\#c0c0c0",
+		"background": "\#272727",
+		"separator": false,
+		"separator_block_width": 1
+	}
+],
