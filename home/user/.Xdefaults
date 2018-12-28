@@ -1,0 +1,80 @@
+!################
+!# xorg
+!################
+Xcursor.size: 32
+Xcursor.theme: Human
+
+!################
+!# urxvt 
+!################
+
+URxvt*termName: rxvt
+URxvt.internalBorder: 15
+
+urxvt*foreground: #cccccc
+urxvt*background: #021b21
+
+!urxvt.font: xft:Terminus-7
+urxvt.font: xft:dina-7
+
+urxvt.scrollBar: false
+urxvt.width: 800
+urxvt*depth:32
+
+
+
+! black
+*color0: #02151a
+! bright_black
+*color8: #03262e
+
+! red
+*color1: #ff5879
+! bright_red
+*color9: #ff99a1
+
+! green
+*color2: #28e577
+! bright_green
+*color10: #3cf58a
+
+! yellow
+*color3: #f1c250
+! bright_yellow
+*color11: #fdd166
+
+! blue
+*color4: #4db0d9
+! bright_blue
+*color12: #6bccf4
+
+! magenta
+*color5: #ff6fce
+! bright_magenta
+*color13: #ffa1df
+
+! cyan
+*color6: #18d7a8
+! bright_cyan
+*color14: #43facd
+
+! white
+*color7: #eeeeee
+! bright_white
+*color15: #ffffff
+
+
+! *color1:       #C2454E
+! *color9:       #EF5847
+! *color2:       #7CBF9E
+! *color10:      #A2D9B1
+! *color3:       #8A7A63
+! *color11:      #BEB090
+! *color4:       #2E3340
+! *color12:      #61778D
+! *color5:       #FF5879
+! *color13:      #FF99A1
+! *color6:       #44B5B1
+! *color14:      #9ED9D8
+! *color7:       #F2F1B9
+! *color15:      #F6F6C9
