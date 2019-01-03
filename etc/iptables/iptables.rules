@@ -1,0 +1,19 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+
+# loopback
+-A INPUT -i lo -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+
+# ACCEPT already ESTABLISHED connections
+-A INPUT -p ALL -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# ACCEPT all OUTPUT
+-A OUTPUT -p ALL -j ACCEPT
+
+# SSH
+# -A INPUT -p tcp --dport 22 -m state --state NEW -j ACCEPT
+
+COMMIT
