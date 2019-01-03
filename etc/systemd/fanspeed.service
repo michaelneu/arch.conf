@@ -1,0 +1,8 @@
+[Unit]
+Description=Initialize fanspeed
+
+[Service]
+ExecStart=/usr/bin/fanspeed 40 0
+
+[Install]
+WantedBy=multi-user.target
