@@ -1,31 +1,33 @@
-out_to_x no
-own_window no
-out_to_console yes
-background no
-max_text_width 0
+conky.config = {
+	out_to_x = false,
+	own_window = false,
+	out_to_console = true,
+	background = false,
+	max_text_width = 0,
 
-update_interval 5
-total_run_times 0
-if_up_strictness address
+	update_interval = 5,
+	total_run_times = 0,
+	if_up_strictness = 'address',
 
-use_spacer none
+	use_spacer = 'none',
 
-use_xft yes
-xftfont Droid Sans:style=bold:size=8
-override_utf8_locale yes
+	use_xft = true,
+	font = 'Droid Sans:style=bold:size=8',
+	override_utf8_locale = true,
+};
 
-TEXT
+conky.text = [[
 [
 	{
 		"name": "wallpaper",
-		"full_text": "       WALLPAPER  ",
+		"full_text": "     [ ] WALLPAPER  ",
 		"color": "\#c0c0c0",
 		"background": "\#272727",
 		"separator": false,
 		"separator_block_width": 1
 	},
 	{ 
-		"full_text": "       ${totalup}      ${totaldown}       ${addr eth0}  ",
+		"full_text": "     [^] ${totalup eth0}    [v] ${totaldown eth0}  [::] ${addr eth0}  ",
 		"color": "\#c0c0c0", 
 		"background": "\#272727",
 		"separator": false,
@@ -33,7 +35,7 @@ TEXT
 	},
 	{
 		"name": "system",
-		"full_text": "       ${memperc}%     ${loadavg 1} (${cpu}%)     ${acpitemp}°C  ",
+		"full_text": "     [||] ${memperc}%   [=] ${loadavg 1} (${cpu}%)   [~] ${acpitemp}°C  ",
 		"color": "\#c0c0c0",
 		"background": "\#272727",
 		"separator": false,
@@ -48,7 +50,7 @@ TEXT
 	},
 	{
 		"name": "calendar",
-		"full_text": "      ${time %Y-%m-%d %H:%M:%S}  ",
+		"full_text": "   [\#]   ${time %Y-%m-%d %H:%M:%S}  ",
 		"color": "\#c0c0c0",
 		"background": "\#272727",
 		"separator": false,
@@ -64,10 +66,11 @@ TEXT
 	},
 	{
 		"name": "shutdown",
-		"full_text": "     poweroff  ",
+		"full_text": "   [.] poweroff  ",
 		"color": "\#c0c0c0",
 		"background": "\#272727",
 		"separator": false,
 		"separator_block_width": 1
 	}
 ],
+]];
